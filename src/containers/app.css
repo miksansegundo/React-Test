@@ -1,0 +1,24 @@
+body {
+  font-family: Roboto, sans-serif;
+  padding: 50px 40px;
+  background: #ccced0;
+  height: calc(100% - 100px);
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.header {
+  background: #0b2f3d;
+  padding: .2rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.section {
+  background: #fff;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
