@@ -38,7 +38,7 @@ const Queue = React.createClass({
                             <p className={styles.info}>from {item.artist} {item.duration}</p>
                         </div>
                         <a href="#" className={styles.btnPlay}><i className='material-icons'>play_arrow</i></a>
-                    </li>;
+                    </li>
                 })}
             </ul>)
         }

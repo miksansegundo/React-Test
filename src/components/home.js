@@ -23,8 +23,13 @@ const Home = React.createClass({
 
                 }
             ],
-            query: 'Chillout'
+            query: ''
         }
+    },
+    search(event) {
+        this.setState({
+            query: event.target.value
+        })
     },
     render() {
 
@@ -55,7 +60,7 @@ const Home = React.createClass({
                         {'name': 'description', 'content': 'Audience Test by Miguel San Segundo'}
                     ]}
                 />
-                <input type="text" className={styles.searchBox} defaultValue={this.state.query} placeholder="Search songs in SoundCloud"/>
+                <input type="text" onChange={this.search} className={styles.searchBox} value={this.state.query} placeholder="Search songs in SoundCloud"/>
                 {content}
             </div>
         );
